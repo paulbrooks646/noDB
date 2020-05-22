@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Display from "./Components/Display.js"
+import Edit from "./Components/Edit.js"
+import Header from "./Components/Header.js"
+import Instructions from "./Components/Instructions.js"
 
-function App() {
+
+export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      cow: "cow"
+    } 
+    }
+
+render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Pig
+      {/* <Header/> */}
+      {/* <Display/> */}
+      {/* <Edit/> */}
+      {/* <Instructions/> */}
     </div>
-  );
+  )
+}
 }
 
-export default App;
+

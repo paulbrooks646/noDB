@@ -21,12 +21,11 @@ Delete: Delete a movie from the array.
 
 Component Architecture
 
-App.js: Stateful. Will hold the array of pokemon.
+App.js: Stateful. Will hold the array of movies.
 Header: Functional. Will display header at the top of the page.
 Filter: Stateful. Will map through the array and only display ones that have a specific rating.
-Edit: Stateful. Will contain the functions to create, edit, a delete.
+Edit: Stateful. Will contain the functions to create, edit, and delete.
 Footer: Functional. Will display the footer.
 
-Wireframe
 
 
