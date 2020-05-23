@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
 //import Display from "./Components/Display.js"
-//import Header from "./Components/Header.js"
-//import Instructions from "./Components/Instructions.js"
+import Header from "./Components/Header.js"
+import Instructions from "./Components/Instructions.js"
 import axios from "axios"
 //import Edit from "./Edit.js"
 import Practice from "./Components/Practice"
-//import Practice2 from "./Components/Practice2"
+import Practice2 from "./Components/Practice2"
 
 export default class App extends Component {
   constructor() {
@@ -51,12 +51,14 @@ deleteMovie (id){
 render() {
   return (
     <div className="App">
-      {/* <Header/>
-      <Display movieArray2={this.state.movieArray} addMovie={this.addMovie} changeRating={this.changeRating} deleteMovie={this.deleteMovie}/>
+      <Header/>
+      <Instructions/>
+
+      {/* <Display movieArray2={this.state.movieArray} addMovie={this.addMovie} changeRating={this.changeRating} deleteMovie={this.deleteMovie}/> */}
     
-      <Instructions/> */}
+      
       <Practice changeRating={this.changeRating} addMovie={this.addMovie} movieArrays={this.state.movieArray} deleteMovie={this.deleteMovie}/>
-      {/* <Practice2 addMovie={this.addMovie} movieArrays={this.state.movieArray}/> */}
+      <Practice2 addMovie={this.addMovie} movieArrays={this.state.movieArray}/>
     </div>
   )
 }
