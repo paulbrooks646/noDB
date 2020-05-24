@@ -22,7 +22,9 @@ this.deleteMovie = this.deleteMovie.bind(this)
 
 componentDidMount(){ 
   axios.get("/api/Movies").then(res => {
-  this.setState({movieArray: res.data})})}
+  this.setState({movieArray: res.data})})
+  .catch(() => {
+    alert('failed to retrieve')})}
 
 
 addMovie(name, rating){
@@ -30,16 +32,23 @@ addMovie(name, rating){
   axios.post("/api/Movies", body).then(res => {
     this.setState({movieArray: res.data})
   })
+  .catch(() => {
+    alert('failed to create')})
 }
 changeRating (id, newRating){
   const body = {newRating}
   axios.put(`/api/Movies/${id}`, body).then(res => {
     this.setState({movieArray: res.data})
   })
+  .catch(() => {
+    alert('failed to update')})
 }
 deleteMovie (id){
   axios.delete(`/api/Movies/${id}`).then(res => {
     this.setState({movieArray: res.data})
+  })
+  .catch(() => {
+    alert('failed to delete')
   })
 }
 
