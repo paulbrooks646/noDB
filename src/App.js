@@ -3,8 +3,9 @@ import './App.css';
 import Header from "./Components/Header.js"
 import Instructions from "./Components/Instructions.js"
 import axios from "axios"
-import Practice from "./Components/Display"
-import Practice2 from "./Components/addMovie"
+import Practice from "./Components/Display.js"
+import Practice2 from "./Components/addMovie.js"
+
 
 export default class App extends Component {
   constructor() {
