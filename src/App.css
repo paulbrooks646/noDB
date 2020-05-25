@@ -18,6 +18,7 @@ h1 {
 h2 {
   margin-right: 10px;
   color:orange;
+  font-size: 25px;
 }
 h3 {
   margin-right: 10px;
@@ -59,7 +60,7 @@ button:hover {
   align-items: center;
 }
 .addition {
-  margin-top: -100px;
+  margin-top: -10px;
 }
 .index {
   color:black;
@@ -82,4 +83,19 @@ header {
 }
 h1:hover {
   color: orange;
+}
+.line {
+  background-color: black;
+  width: 100vw;
+  height: 1px;
+  margin-top: -20px;
+}
+.line2 {
+  background-color: black;
+  width: 50px;
+  height: 1px;
+}
+.sweet {
+  display: flex;
+  align-items: center;
 }

@@ -3,8 +3,9 @@ import './App.css';
 import Header from "./Components/Header.js"
 import Instructions from "./Components/Instructions.js"
 import axios from "axios"
-import Practice from "./Components/Display.js"
-import Practice2 from "./Components/addMovie.js"
+import Display from "./Components/Display.js"
+import addMovie from "./Components/addMovie.js"
+import Line from "./Components/Line.js"
 
 
 export default class App extends Component {
@@ -61,8 +62,8 @@ render() {
     <div className="App">
       <Header/>
       <Instructions/>
-      <Practice changeRating={this.changeRating} addMovie={this.addMovie} movieArrays={this.state.movieArray} deleteMovie={this.deleteMovie}/>
-      <Practice2 addMovie={this.addMovie} movieArrays={this.state.movieArray}/>
+      <Display changeRating={this.changeRating} addMovie={this.addMovie} movieArrays={this.state.movieArray} deleteMovie={this.deleteMovie}/><Line/>
+      <addMovie addMovie={this.addMovie} movieArrays={this.state.movieArray}/>
     </div>
   )
 }
