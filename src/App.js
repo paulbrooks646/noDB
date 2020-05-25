@@ -4,7 +4,7 @@ import Header from "./Components/Header.js"
 import Instructions from "./Components/Instructions.js"
 import axios from "axios"
 import Display from "./Components/Display.js"
-import addMovie from "./Components/addMovie.js"
+import AddMovie from "./Components/AddMovie.js"
 import Line from "./Components/Line.js"
 
 
@@ -63,10 +63,11 @@ render() {
       <Header/>
       <Instructions/>
       <Display changeRating={this.changeRating} addMovie={this.addMovie} movieArrays={this.state.movieArray} deleteMovie={this.deleteMovie}/><Line/>
-      <addMovie addMovie={this.addMovie} movieArrays={this.state.movieArray}/>
+      <AddMovie addMovie={this.addMovie} movieArrays={this.state.movieArray}/>
     </div>
   )
 }
 }
+
 
 

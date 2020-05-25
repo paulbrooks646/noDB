@@ -1,5 +1,5 @@
 import React from "react"
-import newRating from "./newRating"
+import NewRating from "./NewRating"
 
 
 
@@ -13,7 +13,7 @@ function Display(props) {
         <div className="parent">
             <div className="movie">{movieLists}</div>
             <div className="child">
-                <newRating changeRating={props.changeRating} movieArray3={props.movieArrays} />
+                <NewRating changeRating={props.changeRating} movieArray3={props.movieArrays} />
 
             </div>
         </div>
